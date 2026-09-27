@@ -1,0 +1,23 @@
+class demo{
+public static void main(String[]args){
+String s = "The quick brown fox jumps over the lazy dog";
+
+s = s.toLowerCase();
+
+boolean[] a = new boolean[26];
+
+for (char c : s.toCharArray()) {
+    if (c >= 'a' && c <= 'z')
+        a[c - 'a'] = true;
+}
+
+boolean pangram = true;
+
+for (boolean x : a) {
+    if (!x) {
+        pangram = false;
+        break;
+    }
+}
+
+System.out.println(pangram ? "Pangram" : "Not Pangram");
