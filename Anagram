@@ -1,0 +1,8 @@
+class demo{
+public static void main(Sting[]args){
+char[]a=s1.tocharArray();
+char[]b=s2.tocharArray();
+Arrays.sort(a);
+Arrray.sort(b);
+return Arrays.equals(a,b)
+}
